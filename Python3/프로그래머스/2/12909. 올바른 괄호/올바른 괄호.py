@@ -12,7 +12,7 @@ def solution(s):
             count += 1
         else:
             count -= 1
-        if count < 0:
+        if count < 0:    # 어떤 지점에서도 r > l 이면 안됨
             return False
     if count == 0:
         return True
