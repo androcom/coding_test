@@ -1,12 +1,12 @@
 import sys
 
 def main():
-    num_elements = int(sys.stdin.readline())
-    counts = [0] * 10001
+    N = int(sys.stdin.readline())
+    counts = [0] * 10001    # index와 num 범위 일치
 
-    for _ in range(num_elements):
+    for _ in range(N):
         num = int(sys.stdin.readline())
-        counts[num] += 1
+        counts[num] += 1    # 입력횟수
 
     for i in range(10001):
         if counts[i] > 0:
